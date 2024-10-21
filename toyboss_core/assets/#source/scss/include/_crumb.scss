@@ -1,0 +1,36 @@
+
+.crumb {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 568px;
+
+  a {
+    font-family: PT Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ABABAB;
+
+    &:after {
+      content: "/";
+      font-family: PT Sans, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 21px;
+      color: #ABABAB;
+      margin: 0 5px;
+    }
+  }
+
+  span {
+    font-family: PT Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ABABAB;
+  }
+}
+

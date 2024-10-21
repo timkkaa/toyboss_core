@@ -1,0 +1,45 @@
+
+
+.recipes-inner {
+
+
+  .recipes__content-block {
+    border-bottom: 2px solid #CBD5DA;
+    padding: 0 0 24px 0;
+
+    ul, li {
+      list-style: disc!important;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: #333333;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+
+    h2 {
+      max-width: 100%;
+    }
+
+    &:first-child {
+      padding: 0 0 24px 0;
+    }
+
+    &:last-child {
+      border: none;
+      padding: 0;
+    }
+
+
+    img {
+      width: 100%!important;
+      height: auto!important;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+  }
+}

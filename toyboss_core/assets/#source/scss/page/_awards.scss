@@ -1,0 +1,40 @@
+
+.awards-block {
+  min-height: calc(100vh - 358px);
+}
+
+.awards__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px 0 0 -32px;
+
+
+.awards__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+
+.awards__card-inner {
+  margin: 0 0 32px 32px;
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+
+
+
+
+
+

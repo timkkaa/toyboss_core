@@ -1,0 +1,28 @@
+
+
+.recipes {
+
+  .about-company {
+    position: relative;
+    border-bottom: 2px solid #CBD5DA;
+    padding: 0 0 24px 0;
+
+    h2 {
+      max-width: 100%;
+    }
+
+    a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+
+  img {
+    width: 100% !important;
+    height: auto!important;
+  }
+
+}

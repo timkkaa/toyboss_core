@@ -1,0 +1,137 @@
+//create your typography and buttons
+
+.h1 {
+}
+
+.h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #1558A3;
+}
+
+.h3 {
+}
+
+.h4 {
+}
+
+.h5 {
+}
+
+.h6 {
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #333333;
+}
+
+.subtitle1 {
+}
+
+.subtitle2 {
+}
+
+.body1 {
+}
+
+.body2 {
+}
+
+.btn {
+  display: inline-flex;
+  height: 50px;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none !important;
+  transition: 0.3s;
+  background-color: #333;
+  color: #fff;
+}
+
+.link__detail {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: PT Sans, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #1558A3;
+  border-radius: 24px;
+  padding: 9px 24px 9px 27px;
+  max-width: 204px;
+  transition: .2s;
+
+
+
+  &:hover {
+    background: #133c7d;
+  }
+
+  &:hover:before {
+    transform: translateX(5px);
+  }
+
+  &:before {
+    transition: .2s;
+    content: "";
+    width: 18px;
+    height: 17px;
+    margin: 0 15px 0 0;
+    background: url("../img/svg/arrow-right.svg") center no-repeat;
+  }
+}
+
+.btn.btn-warning {
+  &:hover {
+
+  }
+}
+
+.btn.btn-danger {
+  &:hover {
+
+  }
+}
+
+.btn.btn-success {
+  &:hover {
+
+  }
+}
+
+.btn.btn-info {
+  &:hover {
+
+  }
+}
+
+.btn.btn-default {
+  &:hover {
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+
+
+.about-company-all {
+  max-width: 568px;
+
+  h2 {
+    margin: 24px 0 16px 0;
+
+    a {
+      color: #1558A3;
+    }
+  }
+}
+
+
+.about-company__content {
+
+  &:last-child img{
+    margin: 0;
+  }
+
+  p {
+    margin: 12px 0 16px 0;
+  }
+
+  h5 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    color: #ABABAB;
+    margin: 0 0 12px 0;
+  }
+
+  img {
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 0 16px 0;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+
+
+

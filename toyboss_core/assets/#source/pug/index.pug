@@ -1,0 +1,179 @@
+extends base/_base
+
+block title
+    title="index"
+    //title your page 'about-us' example
+
+block content
+    main.main__content
+        section.main-slider-section.test(style="background: url('img/jpg/slider-background.jpg')")
+            .container
+                .main-slider
+                    .swiper-container
+                        .swiper-wrapper
+                            .swiper-slide
+                                .slider-content
+                                    .product-name-img(smooth-parallax  start-movement="0" end-movement="1" start-position-y="0.1" end-position-y="-8")
+                                        img(src="img/png/slider-product-name.png")
+                                    .product-img2(smooth-parallax  start-movement="0" end-movement="1" start-position-y="0.1" end-position-y="-3")
+                                        img(src="img/png/product-img2.png")
+                                    .product-img3(smooth-parallax  start-movement="0" end-movement="1" start-position-y="0.1" end-position-y="3")
+                                        img(src="img/png/product-img33.png")
+                                    .product-slider-heading
+                                        h3  Узнайте как вкуснее
+                                        p   Миссия компании заключается в том, чтобы прикладывать все силы для улучшения качества жизни наших потребителей.
+                                        a.link__detail(href="#") Наша продукция
+
+                            .swiper-slide
+                                .slider-content
+                                    .product-name-img(smooth-parallax  start-movement="0" end-movement="1" start-position-y="0.1" end-position-y="-8")
+                                        img(src="img/png/slider-product-name.png")
+                                    .product-img2(smooth-parallax  start-movement="0" end-movement="1" start-position-y="0.1" end-position-y="-3")
+                                        img(src="img/png/product-img2.png")
+                                    .product-img3(smooth-parallax  start-movement="0" end-movement="1" start-position-y="0.1" end-position-y="3")
+                                        img(src="img/png/product-img33.png")
+                                    .product-slider-heading
+                                        h3  Узнайте как вкуснее
+                                        p   Миссия компании заключается в том, чтобы прикладывать все силы для улучшения качества жизни наших потребителей.
+                                        a.link__detail(href="#") Наша продукция
+
+                            .swiper-slide
+                                .slider-content
+                                    .product-name-img(smooth-parallax  start-movement="0" end-movement="1" start-position-y="0.1" end-position-y="-8")
+                                        img(src="img/png/slider-product-name.png")
+                                    .product-img2(smooth-parallax  start-movement="0" end-movement="1" start-position-y="0.1" end-position-y="-3")
+                                        img(src="img/png/product-img2.png")
+                                    .product-img3(smooth-parallax  start-movement="0" end-movement="1" start-position-y="0.1" end-position-y="3")
+                                        img(src="img/png/product-img33.png")
+                                    .product-slider-heading
+                                        h3  Узнайте как вкуснее
+                                        p   Миссия компании заключается в том, чтобы прикладывать все силы для улучшения качества жизни наших потребителей.
+                                        a.link__detail(href="#") Наша продукция
+
+                            .swiper-slide
+                                .slider-content
+                                    .product-name-img(smooth-parallax  start-movement="0" end-movement="1" start-position-y="0.1" end-position-y="-8")
+                                        img(src="img/png/slider-product-name.png")
+                                    .product-img2(smooth-parallax  start-movement="0" end-movement="1" start-position-y="0.1" end-position-y="-3")
+                                        img(src="img/png/product-img2.png")
+                                    .product-img3(smooth-parallax  start-movement="0" end-movement="1" start-position-y="0.1" end-position-y="3")
+                                        img(src="img/png/product-img33.png")
+                                    .product-slider-heading
+                                        h3  Узнайте как вкуснее
+                                        p   Миссия компании заключается в том, чтобы прикладывать все силы для улучшения качества жизни наших потребителей.
+                                        a.link__detail(href="#") Наша продукция
+
+                        .swiper-pagination
+                        .swiper-button-next
+                        .swiper-button-prev
+        section.about-us
+            .container
+                .about-us__content
+                    .about-us__content-left
+                        h2  О НАС
+                    .about-us__content-right
+                        h2
+                            a(href="#") Производитель колбасных издели халяль №1 в Кыргызстане
+                        p   Миссия компании заключается в том, чтобы прикладывать все силы для улучшения качества жизни наших потребителей.
+                        .content-right__img
+                            img(src="img/png/img.png")
+                        a.link__detail(href="#") подробнее о нас
+        section.whats-tastier(style="background: url('img/jpg/slider-background.jpg')")
+            .whats-tastier__img1(smooth-parallax  start-movement="0.1" end-movement=".4" start-position-x="-.8" end-position-x="0")
+                img(src="img/png/img5.png")
+            .whats-tastier__img2(smooth-parallax  start-movement="0.1" end-movement=".4" start-position-y=".8" end-position-y="0")
+                img(src="img/png/img6.png")
+            .container
+                .whats-tastier__content
+                    .product-slider-heading
+                        h3  Узнайте как вкуснее
+                        p   Миссия компании заключается в том, чтобы прикладывать все силы для улучшения качества жизни наших потребителей.
+                        a.link__detail(href="#") Наша продукция
+        section.about-us
+            .container
+                .about-us__content
+                    .about-us__content-left
+                        h2  Награды
+                    .about-us__content-right
+                        .awards__img-all
+                            .swiper-container2
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        .awards__img-block
+                                            .awards__img
+                                                a(href="#")
+                                                    img(src="img/png/icon-best.png")
+                                    .swiper-slide
+                                        .awards__img-block
+                                            .awards__img
+                                                a(href="#")
+                                                    img(src="img/png/icon-best.png")
+                                    .swiper-slide
+                                        .awards__img-block
+                                            .awards__img
+                                                a(href="#")
+                                                    img(src="img/png/icon-best.png")
+                                    .swiper-slide
+                                        .awards__img-block
+                                            .awards__img
+                                                a(href="#")
+                                                    img(src="img/png/icon-best.png")
+
+                                .swiper-button-next
+                                .swiper-button-prev
+        section.whats-tastier(style="background: url('img/jpg/slider-background.jpg')")
+            .whats-tastier__img1(smooth-parallax  start-movement="0.4" end-movement=".7" start-position-x="-.8" end-position-x="0")
+                img(src="img/png/img5.png")
+            .whats-tastier__img2(smooth-parallax  start-movement="0.4" end-movement=".7" start-position-y=".8" end-position-y="0")
+                img(src="img/png/img6.png")
+            .container
+                .whats-tastier__content
+                    .product-slider-heading
+                        h3  Узнайте как вкуснее
+                        p   Миссия компании заключается в том, чтобы прикладывать все силы для улучшения качества жизни наших потребителей.
+                        a.link__detail(href="#") рецепты
+        section.about-us
+            .container
+                .about-us__content
+                    .about-us__content-left
+                        h2  публикации
+                    .publications__all
+                        .publications__card
+                            .about-us__content-right
+                                h2(data-mh="my-group")
+                                    a(href="#") Производитель колбасных
+                                p(data-mh="my-group1")   Миссия компании заключается в том
+                                .content-right__img
+                                    img(src="img/png/img.png")
+                                a.link__detail(href="#") подробнее о нас
+                        .publications__card
+                            .about-us__content-right
+                                h2(data-mh="my-group")
+                                    a(href="#") Производитель колбасных издели халяль №1 в Кыргызстане
+                                p(data-mh="my-group1")   Миссия компании заключается в том, чтобы прикладывать все силы для улучшения качества жизни наших потребителей.
+                                .content-right__img
+                                    img(src="img/png/img.png")
+                                a.link__detail(href="#") подробнее о нас
+
+
+
+
+
+//- connect only custom js
+block scripts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

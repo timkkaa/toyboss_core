@@ -1,0 +1,112 @@
+//create your reset styles
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'PT Serif', sans-serif;
+    font-weight: normal;
+    max-width: 1920px;
+    margin: 0 auto;
+
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: auto;
+        bottom: 0;
+        background: #133E8F;
+        width: 29%;
+        height: 100%;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: auto;
+        right: 0;
+        bottom: 0;
+        background: url("../img/jpg/body-background.jpg") repeat center;
+        width: 71%;
+        height: 100%;
+    }
+
+    @media (min-width: 1500px) {
+        &:before {
+            width: 35%;
+        }
+
+        &:after {
+            width: 65%;
+        }
+
+    }
+
+
+}
+
+
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: auto;
+        bottom: 0;
+        background: #133E8F;
+        width: 26%;
+        height: 100%;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: auto;
+        right: 0;
+        bottom: 0;
+        background: url("../img/jpg/body-background.jpg") repeat center;
+        width: 74%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1230px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

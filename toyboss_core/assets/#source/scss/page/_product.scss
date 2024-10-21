@@ -1,0 +1,166 @@
+
+.product__content {
+  display: flex;
+  padding: 20px 0 56px 0;
+}
+
+.product-left {
+  width: 26%;
+
+  h1 {
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
+
+.product-right {
+  width: 74%;
+  padding: 0 0 0 100px;
+}
+
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 206px;
+
+  .paralax-img {
+    width: 297px;
+    height: 246px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .paralax-img2 {
+    width: 559px;
+    height: 300px;
+    position: absolute;
+    top: -36px;
+    right: 0;
+    z-index: 20;
+  }
+
+  .parallax-heading {
+    position: absolute;
+    z-index: 22;
+    max-width: 330px;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+
+    h2 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 47px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.product__section-all {
+
+  .product__section-group {
+    &:last-child .product-right{
+      padding: 86px 0 16px 100px;
+    }
+  }
+}
+
+
+.product-sausage {
+
+  .product-right {
+    margin: 0 0 0 auto;
+    padding: 86px 0 48px 100px;
+
+  }
+}
+
+.product__card-all {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 -32px;
+  padding: 0 0 32px 0;
+}
+
+.product__card-inner {
+  width: 20%;
+}
+
+.product__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 32px;
+  border-bottom: 1px solid #CBD5DA;
+  border-top: 1px solid #CBD5DA;
+  padding: 16px 0;
+
+  &:hover  .product__card-img {
+    transform: translateY(-5px);
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #1558A3;
+    margin: 16px 0 0 0;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .product__card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 240px;
+    transition: .2s;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+
+
+.button__product-all {
+  text-align: center;
+  margin: 0 0 32px 0;
+
+  a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #1558A3;
+
+    &:hover {
+      color: #163880;
+    }
+  }
+}
+
+
+
+
+
+

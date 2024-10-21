@@ -1,0 +1,348 @@
+
+.main-slider-section {
+  min-height: 548px;
+  width: 100%;
+
+
+
+  .container {
+    &:after {
+      content: none;
+    }
+
+    &:before {
+      content: none;
+    }
+  }
+}
+
+
+.main__content {
+  overflow: hidden;
+}
+
+.slider-content {
+  position: relative;
+  z-index: 1;
+  height: 548px;
+}
+
+.product-name-img {
+  position: absolute;
+  z-index: 1;
+  top: 104px;
+  left: 97px;
+  right: auto;
+  max-width: 468px;
+  height: 120px;
+}
+
+.product-img2 {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 97px;
+  left: auto;
+  width: 461px;
+  height: 461px;
+}
+
+.product-img3 {
+  position: absolute;
+  z-index: 3;
+  top: auto;
+  bottom: -50px;
+  left: 35%;
+  width: 322px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: -20px 20px 40px 5px rgba(245, 0, 53, 0.25);
+}
+
+
+
+
+.product-slider-heading {
+  position: absolute;
+  z-index: 4;
+  bottom: 56px;
+  left: 97px;
+
+  h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 0 0 16px 0;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 0 0 36px 0;
+    max-width: 352px;
+
+  }
+
+}
+
+.main__content{
+
+  .swiper-container {
+    overflow: hidden;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 100%;
+    left: 0;
+    top: 15px;
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #C4C4C4;
+    opacity: 1;
+    outline: none;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #1758A2;
+    outline: none;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+  }
+
+  .swiper-button-prev {
+    width: 52px;
+    height: 52px;
+    background: #1558A3;
+    border-radius: 50%;
+    outline: none;
+    transition: .2s;
+
+    &:hover {
+      background: #133c7d;
+    }
+
+    &:after {
+      content: " ";
+      display: block;
+      width: 24px;
+      height: 23px;
+      background: url("../img/svg/arrow-prev.svg") center no-repeat;
+    }
+  }
+
+  .swiper-button-next {
+    width: 52px;
+    height: 52px;
+    background: #1558A3;
+    border-radius: 50%;
+    outline: none;
+    transition: .2s;
+
+    &:hover {
+      background: #133c7d;
+    }
+
+    &:after {
+      content: " ";
+      display: block;
+      width: 24px;
+      height: 23px;
+      background: url("../img/svg/arrow-next.svg") center no-repeat;
+    }
+  }
+}
+
+
+.about-us {
+
+  .container {
+    padding: 48px 16px 48px 16px;
+  }
+
+  .about-us__content-left {
+    h2 {
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+  }
+
+  .about-us__content {
+    display: flex;
+    border-top: 2px solid #BDBDBD;
+    padding: 48px 0 0 0;
+  }
+
+  .about-us__content-left {
+    width: 26%;
+  }
+
+  .about-us__content-right {
+    width: 74%;
+    padding: 0 0 0 100px;
+
+   .link__detail {
+      background: #F70035;
+
+     &:hover {
+       background: #cd0033;
+     }
+    }
+    h2 {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 31px;
+      color: #1558A3;
+      margin: 0 0 16px 0;
+      transition: .2s;
+
+      &:hover {
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.71);
+      }
+
+      a {
+        color: #1558A3;
+      }
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: #333333;
+      margin: 0 0 24px 0;
+    }
+
+    .content-right__img {
+      max-width: 568px;
+      max-height: 315px;
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 0 0 16px 0;
+
+    }
+  }
+
+}
+
+
+.whats-tastier {
+  position: relative;
+  z-index: 2;
+
+  .container {
+    &:after {
+      content: none;
+    }
+
+    &:before {
+      content: none;
+    }
+  }
+
+
+  .whats-tastier__img1 {
+    position: absolute;
+    top: -31px;
+    left: 0;
+  }
+
+  .whats-tastier__img2 {
+    position: absolute;
+    bottom: -55px;
+    right: 39px;
+  }
+
+}
+
+
+.whats-tastier__content {
+  position: relative;
+  height: 548px;
+
+}
+
+.awards__img-all {
+  position: relative;
+  display: flex;
+  margin: 0 0 0 -32px;
+
+
+  .awards__img {
+    max-width: 168px;
+    opacity: 0.5;
+    transition: .3s;
+
+    a {
+      display: inline-block;
+    }
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+  }
+
+  .swiper-container2 {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 30px;
+    padding: 0 20px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-button-disabled {
+    opacity: 0;
+  }
+
+  .swiper-button-next {
+    right: 0;
+    left: auto;
+  }
+
+.swiper-button-prev {
+    left: 0;
+    right: auto;
+  }
+}
+
+
+
+
+
+.publications__all {
+  display: flex;
+  width: 74%;
+  padding: 0 0 0 100px;
+  margin: 0 0 0 -32px;
+
+  .publications__card {
+    padding: 0 0 0 32px;
+    width: 50%;
+  }
+
+  .about-us__content-right {
+    width: 100%;
+    padding: 0;
+  }
+}

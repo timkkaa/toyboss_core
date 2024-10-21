@@ -1,0 +1,124 @@
+
+
+.vacancies  .product__content{
+  min-height: calc(100vh - 358px);
+}
+
+
+.vacancies__content {
+  max-width: 567px;
+}
+
+.vacancies__tab {
+  position: relative;
+  border-bottom: 2px solid #CBD5DA;
+  padding: 24px 0 24px 0;
+  cursor: pointer;
+
+
+  &:last-child {
+    border: none;
+  }
+
+  .vacancies__tab-button {
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 12px 0;
+
+      &:after {
+        content: "";
+        width: 19px;
+        height: 7px;
+        background: url("../img/svg/arrow-down.svg") center no-repeat;
+      }
+    }
+
+    h5 {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 150%;
+      color: #ABABAB;
+      margin: 0 0 12px 0;
+    }
+
+  }
+
+  .vacancies__tab-content {
+    display: none;
+
+    h2 {
+
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 150%;
+      color: #333333;
+      margin: 0 0 8px 0;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 150%;
+      color: #333333;
+      margin: 36px 0 24px 0;
+    }
+
+    p {
+      margin: 0 0 16px 0;
+    }
+
+    a {
+      color: #1558A3;
+      text-decoration: underline;
+    }
+  }
+
+  .vacancies__tab-hide {
+    display: none;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+
+    span {
+      font-family: PT Sans, sans-serif;
+      display: block;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 150%;
+      text-align: center;
+      color: #1558A3;
+      margin: 0 auto;
+    }
+  }
+
+}
+
+
+
+.contact-tabs__show {
+  padding: 24px 0 60px 0;
+
+
+
+  .vacancies__tab-hide {
+    display: block;
+  }
+
+  .vacancies__tab-button {
+
+    h2:after {
+      transform: rotate(180deg);
+    }
+  }
+
+  .vacancies__tab-button p span {
+    display: none;
+  }
+
+}
+
+
+

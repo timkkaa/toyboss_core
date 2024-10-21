@@ -1,0 +1,210 @@
+
+.contact__content-all {
+
+  &:last-child {
+    .contact__content-inner {
+      padding: 86px 0 0 0;
+    }
+  }
+
+  .product-right {
+    margin: 0 0 0 auto;
+  }
+
+  .contact__content-inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 86px 0 40px 0;
+  }
+
+  .contact-info {
+    width: 40%;
+    padding: 0 50px 0 0;
+    margin: 0 0 28px 0;
+
+    a, p,  .contact__operating-mode {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #333333;
+    }
+
+    p, a {
+      margin: 0 0 8px 0;
+    }
+
+
+    .contact__operating-mode {
+      align-items: flex-start;
+
+      &:before {
+        display: flex;
+        content: "";
+        min-width: 24px;
+        height: 24px;
+        margin: 0 16px 0 0;
+        background: url("../img/svg/Flag.svg") center no-repeat;
+      }
+    }
+
+    .contact-tell {
+
+      &:before {
+        content: "";
+        min-width: 24px;
+        height: 24px;
+        margin: 0 16px 0 0;
+        background: url("../img/svg/Phone.svg") center no-repeat;
+      }
+    }
+
+    .contact-whatsapp {
+
+      &:before {
+        content: "";
+        min-width: 24px;
+        height: 24px;
+        margin: 0 16px 0 0;
+        background: url("../img/svg/whatsapp.svg") center no-repeat;
+      }
+    }
+
+    .contact-email {
+
+      &:before {
+        content: "";
+        min-width: 24px;
+        height: 24px;
+        margin: 0 16px 0 0;
+        background: url("../img/svg/Mail.svg") center no-repeat;
+      }
+    }
+
+    .hr-departament {
+      display: flex;
+
+      &:before {
+        content: "";
+        min-width: 24px;
+        height: 24px;
+        margin: 0 16px 0 0;
+        background: url("../img/svg/User.svg") center no-repeat;
+      }
+    }
+
+    .contact__address {
+      display: flex;
+
+      &:before {
+        content: "";
+        min-width: 24px;
+        height: 24px;
+        margin: 0 16px 0 0;
+        background: url("../img/svg/Location.svg") center no-repeat;
+      }
+    }
+
+    .contact__live {
+      display: flex;
+
+      &:before {
+        content: "";
+        min-width: 24px;
+        height: 24px;
+        margin: 0 16px 0 0;
+        background: url("../img/svg/Comment.svg") center no-repeat;
+      }
+    }
+
+    .contact__network-link {
+      display: flex;
+      margin: 12px 0 0 0;
+
+      .contact-insta {
+
+        &:before {
+          content: "";
+          display: block;
+          min-width: 24px;
+          height: 24px;
+          margin: 0 16px 0 0;
+          background: url("../img/svg/instagram-icon.svg") center no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .contact-fb {
+
+        &:before {
+          content: "";
+          display: block;
+          min-width: 24px;
+          height: 24px;
+          margin: 0 16px 0 0;
+          background: url("../img/svg/facebook-icon.svg") center no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .contact-wa {
+
+        &:before {
+          content: "";
+          display: block;
+          min-width: 24px;
+          height: 24px;
+          margin: 0 16px 0 0;
+          background: url("../img/svg/whatsapp-icon.svg") center no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .contact-telegram {
+
+        &:before {
+          content: "";
+          display: block;
+          min-width: 24px;
+          height: 24px;
+          margin: 0 16px 0 0;
+          background: url("../img/svg/telegram.svg") center no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+
+
+  .contact-map-block {
+    padding: 0 0 48px 0;
+  }
+
+  .contact__map {
+    width: 567px;
+    height: 332px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
