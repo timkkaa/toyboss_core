@@ -1,7 +1,8 @@
+
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
-
+from journal.models import Product
 
 
 class HomeView(TemplateView):
@@ -9,6 +10,14 @@ class HomeView(TemplateView):
 
 class ProductView(TemplateView):
     template_name = 'product.html'
+
+    def get_context_data(self, **kwargs):
+        publication_pk = kwargs['pk']
+        context = {
+            'product': Product.objects.all
+        }
+        return context
+
 
 class ProductInnerView(TemplateView):
     template_name = 'product-inner.html'
@@ -23,5 +32,9 @@ class PublicationsInnerView(TemplateView):
 class AboutCompanyView(TemplateView):
     template_name = 'about-company.html'
 
+class ReciponsView(TemplateView):
+    template_name = ('recipes.html')
 
+class ReciponsInnerView(TemplateView):
+    template_name = ('recipes-inner.html')
 
