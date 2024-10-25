@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -10,9 +12,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png"/>
     <link rel="manifest" href="favicon_io/site.webmanifest"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>
-    <link rel="stylesheet" href="fonts/PTSerif/stylesheet.css"/>
-    <link rel="stylesheet" href="fonts/PTSans/stylesheet.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="{% static'fonts/PTSerif/stylesheet.css' %}"/>
+    <link rel="stylesheet" href="{% static'fonts/PTSans/stylesheet.css' %}"/>
+    <link rel="stylesheet" href="{% static'css/style.css' %}"/>
     <title>Product-inner</title>
   </head>
   <body>
@@ -20,7 +22,7 @@
       <div class="container">
         <div class="header-content">
           <div class="header-logo">
-            <div class="header-logo__img"><a href="#"><img src="img/svg/logo-header.svg"/></a></div>
+            <div class="header-logo__img"><a href="#"><img src="{% static'img/svg/logo-header.svg' %}"/></a></div>
           </div>
           <div class="header-nav__content">
             <div class="navigation">
@@ -37,8 +39,8 @@
               </ul>
             </div>
             <div class="header-language">
-              <div class="network-link"><a href="#"><img src="img/svg/instagram-icon.svg"/></a><a href="#"><img src="img/svg/facebook-icon.svg"/></a><a href="#"><img src="img/svg/whatsapp-icon.svg"/></a></div>
-              <div class="language-link"><a href="#"><img src="img/svg/kg-icon.svg"/></a><a href="#"><img src="img/svg/ru-icon.svg"/></a><a href="#"><img src="img/svg/en-icon.svg"/></a><a href="#"><img src="img/svg/kz-icon.svg"/></a></div>
+              <div class="network-link"><a href="#"><img src="{% static'img/svg/instagram-icon.svg' %}"/></a><a href="#"><img src="{% static'img/svg/facebook-icon.svg' %}"/></a><a href="#"><img src="{% static'img/svg/whatsapp-icon.svg' %}"/></a></div>
+              <div class="language-link"><a href="#"><img src="{% static'img/svg/kg-icon.svg' %}"/></a><a href="#"><img src="{% static'img/svg/ru-icon.svg' %}"/></a><a href="#"><img src="{% static'img/svg/en-icon.svg' %}"/></a><a href="#"><img src="{% static'img/svg/kz-icon.svg' %}"/></a></div>
             </div>
           </div>
         </div>
@@ -57,8 +59,8 @@
       </div>
     </section>
     <section class="parallax" style="background: url('img/jpg/slider-background.jpg')">
-      <div class="paralax-img"><img src="img/png/img9.png"/></div>
-      <div class="paralax-img2"><img src="img/png/img10.png"/></div>
+      <div class="paralax-img"><img src="{% static'img/png/img9.png' %}"/></div>
+      <div class="paralax-img2"><img src="{% static'img/png/img10.png' %}"/></div>
       <div class="parallax-heading">
         <h2>полукапченые колбасы</h2>
       </div>
@@ -67,7 +69,7 @@
       <div class="container">
         <div class="product-right">
           <div class="product__inner-content">
-            <div class="product__inner-img"><img src="img/png/img12.png"/></div>
+            <div class="product__inner-img"><img src="{% static'img/png/img12.png' %}"/></div>
             <div class="productinner-heading-all">
               <div class="product__inner-heading">
                 <h2>  Фирменная</h2>
@@ -83,7 +85,7 @@
                 <div class="product__inner-card-all">
                   <div class="product__inner-cards">
                     <div class="product__inner-card">
-                      <div class="product__inner-card-img"><img src="img/png/img.png" data-mh="my-group2"/></div>
+                      <div class="product__inner-card-img"><img src="{% static'img/png/img.png' %}" data-mh="my-group2"/></div>
                       <div class="product__inner-card-heading">
                         <p>Миссия компании заключается в том, чтобы прикладывать все силы для</p>
                       </div><a href="#"></a>
@@ -91,7 +93,7 @@
                   </div>
                   <div class="product__inner-cards">
                     <div class="product__inner-card">
-                      <div class="product__inner-card-img"><img src="img/png/img.png" data-mh="my-group2"/></div>
+                      <div class="product__inner-card-img"><img src="{% static'img/png/img.png' %}" data-mh="my-group2"/></div>
                       <div class="product__inner-card-heading">
                         <p>Миссия компании заключается в том, чтобы прикладывать</p>
                       </div><a href="#"></a>
@@ -99,7 +101,7 @@
                   </div>
                   <div class="product__inner-cards">
                     <div class="product__inner-card">
-                      <div class="product__inner-card-img"><img src="img/png/img.png" data-mh="my-group2"/></div>
+                      <div class="product__inner-card-img"><img src="{% static'img/png/img.png' %}" data-mh="my-group2"/></div>
                       <div class="product__inner-card-heading">
                         <p>Миссия компании заключается в том.</p>
                       </div><a href="#"></a>
@@ -119,61 +121,61 @@
             <div class="product__card-all">
               <div class="product__card-inner">
                 <div class="product__card">
-                  <div class="product__card-img"><img src="img/png/img12.png"/></div>
+                  <div class="product__card-img"><img src="{% static'img/png/img12.png' %}"/></div>
                   <h4 data-mh="my-group"> Фирменная</h4><a href="#"></a>
                 </div>
               </div>
               <div class="product__card-inner">
                 <div class="product__card">
-                  <div class="product__card-img"><img src="img/png/img12.png"/></div>
+                  <div class="product__card-img"><img src="{% static'img/png/img12.png' %}"/></div>
                   <h4 data-mh="my-group"> Мусульманская Мусульманская</h4><a href="#"></a>
                 </div>
               </div>
               <div class="product__card-inner">
                 <div class="product__card">
-                  <div class="product__card-img"><img src="img/png/img12.png"/></div>
+                  <div class="product__card-img"><img src="{% static'img/png/img12.png' %}"/></div>
                   <h4 data-mh="my-group"> Байская Мусульманская Мусульманская</h4><a href="#"></a>
                 </div>
               </div>
               <div class="product__card-inner">
                 <div class="product__card">
-                  <div class="product__card-img"><img src="img/png/img12.png"/></div>
+                  <div class="product__card-img"><img src="{% static'img/png/img12.png' %}"/></div>
                   <h4 data-mh="my-group"> Байская Мусульманская Мусульманская Мусульманская</h4><a href="#"></a>
                 </div>
               </div>
               <div class="product__card-inner">
                 <div class="product__card">
-                  <div class="product__card-img"><img src="img/png/img12.png"/></div>
+                  <div class="product__card-img"><img src="{% static'img/png/img12.png' %}"/></div>
                   <h4 data-mh="my-group"> Байская</h4><a href="#"></a>
                 </div>
               </div>
               <div class="product__card-inner">
                 <div class="product__card">
-                  <div class="product__card-img"><img src="img/png/img12.png"/></div>
+                  <div class="product__card-img"><img src="{% static'img/png/img12.png' %}"/></div>
                   <h4 data-mh="my-group"> Фирменная</h4><a href="#"></a>
                 </div>
               </div>
               <div class="product__card-inner">
                 <div class="product__card">
-                  <div class="product__card-img"><img src="img/png/img12.png"/></div>
+                  <div class="product__card-img"><img src="{% static'img/png/img12.png' %}"/></div>
                   <h4 data-mh="my-group"> Мусульманская Мусульманская</h4><a href="#"></a>
                 </div>
               </div>
               <div class="product__card-inner">
                 <div class="product__card">
-                  <div class="product__card-img"><img src="img/png/img12.png"/></div>
+                  <div class="product__card-img"><img src="{% static'img/png/img12.png' %}"/></div>
                   <h4 data-mh="my-group"> Байская Мусульманская Мусульманская</h4><a href="#"></a>
                 </div>
               </div>
               <div class="product__card-inner">
                 <div class="product__card">
-                  <div class="product__card-img"><img src="img/png/img12.png"/></div>
+                  <div class="product__card-img"><img src="{% static'img/png/img12.png' %}"/></div>
                   <h4 data-mh="my-group"> Байская Мусульманская Мусульманская Мусульманская</h4><a href="#"></a>
                 </div>
               </div>
               <div class="product__card-inner">
                 <div class="product__card">
-                  <div class="product__card-img"><img src="img/png/img9.png"/></div>
+                  <div class="product__card-img"><img src="{% static'img/png/img9.png' %}"/></div>
                   <h4 data-mh="my-group"> Байская</h4><a href="#"></a>
                 </div>
               </div>
@@ -196,7 +198,7 @@
               </ul>
             </nav>
             <div class="footer-link">
-              <div class="network-link"><a href="#"><img src="img/svg/instagram-icon.svg"/></a><a href="#"><img src="img/svg/facebook-icon.svg"/></a><a href="#"><img src="img/svg/whatsapp-icon.svg"/></a></div>
+              <div class="network-link"><a href="#"><img src="{% static'img/svg/instagram-icon.svg' %}"/></a><a href="#"><img src="{% static'img/svg/facebook-icon.svg' %}"/></a><a href="#"><img src="{% static'img/svg/whatsapp-icon.svg' %}"/></a></div>
             </div>
           </div>
         </div>
@@ -204,7 +206,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@11.1.14/swiper.min.js"></script>
-    <script src="js/libs.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{% static'js/libs.js' %}"></script>
+    <script src="{% static'js/main.js' %}"></script>
   </body>
 </html>

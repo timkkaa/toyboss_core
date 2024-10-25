@@ -14,7 +14,7 @@ from journal.views import HomeView, ProductView, ProductInnerView, PublicationsV
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', HomeView.as_view()),
-    path('product/<int:pk>/', ProductView.as_view(), name='product-url'),
+    path('product/', ProductView.as_view(), name='product-url'),
     path('product-inner/<int:pk>/', ProductInnerView.as_view(), name='product-inner-url'),
     path('publications/', PublicationsView.as_view()),
     path('publications-inner/', PublicationsInnerView.as_view()),
