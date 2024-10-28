@@ -28,56 +28,66 @@
             <div class="navigation">
               <ul class="nav">
                 <div class="nav-group">
-                  <li class="nav-link active"><a href="#">О нас</a></li>
-                  <li class="nav-link"><a href="#">Продукция</a></li>
-                  <li class="nav-link"><a href="#">Публикации</a></li>
+                  <li class="nav-link active"><a href="{% url 'about-url' %}">О нас</a></li>
+                  <li class="nav-link"><a href="{% url 'product-url' %}">Продукция</a></li>
+                  <li class="nav-link"><a href="{% url 'publication-url' %}">Публикации</a></li>
                 </div>
                 <div class="nav-group">
-                  <li class="nav-link"><a href="#">Рецепты</a></li>
-
+                  <li class="nav-link"><a href="{% url 'recipes-url' %}">Рецепты</a></li>
                 </div>
               </ul>
             </div>
             <div class="header-language">
-              <div class="network-link"><a href="#"><img src="{% static 'img/svg/instagram-icon.svg' %}"/></a><a href="#"><img src="{% static 'img/svg/facebook-icon.svg' %}"/></a><a href="#"><img src="{% static 'img/svg/whatsapp-icon.svg' %}"/></a></div>
-              <div class="language-link"><a href="#"><img src="{% static 'img/svg/kg-icon.svg' %}"/></a><a href="#"><img src="{% static 'img/svg/ru-icon.svg' %}"/></a><a href="#"><img src="{% static 'img/svg/en-icon.svg' %}"/></a><a href="#"><img src="{% static 'img/svg/kz-icon.svg' %}"/></a></div>
+              <div class="network-link">
+                <a href="#"><img src="{% static 'img/svg/instagram-icon.svg' %}"/></a>
+                <a href="#"><img src="{% static 'img/svg/facebook-icon.svg' %}"/></a>
+                <a href="#"><img src="{% static 'img/svg/whatsapp-icon.svg' %}"/></a>
+              </div>
+              <div class="language-link">
+                <a href="#"><img src="{% static 'img/svg/kg-icon.svg' %}"/></a>
+                <a href="#"><img src="{% static 'img/svg/ru-icon.svg' %}"/></a>
+                <a href="#"><img src="{% static 'img/svg/en-icon.svg' %}"/></a>
+                <a href="#"><img src="{% static 'img/svg/kz-icon.svg' %}"/></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-
     {% block content %}
     {% endblock %}
 
-      <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-logo"><a href="#">   Developed by YOUR-NAME 2024</a></div>
+          <div class="footer-logo"><a href="#">Developed by YOUR-NAME 2024</a></div>
           <div class="footer-nav-content">
             <nav class="nav">
               <ul>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Продукция</a></li>
-                <li><a href="#">Публикации</a></li>
-                <li><a href="#">Рецепты</a></li>
+                <li><a href="{% url 'about-url' %}">О нас</a></li>
+                <li><a href="{% url 'product-url' %}">Продукция</a></li>
+                <li><a href="{% url 'publication-url' %}">Публикации</a></li>
+                <li><a href="{% url 'recipes-url' %}">Рецепты</a></li>
               </ul>
             </nav>
             <div class="footer-link">
-              <div class="network-link"><a href="#"><img src="{% static 'img/svg/instagram-icon.svg' %}"/></a><a href="#"><img src="{% static 'img/svg/facebook-icon.svg' %}"/></a><a href="#"><img src="{% static 'img/svg/whatsapp-icon.svg' %}"/></a></div>
+              <div class="network-link">
+                <a href="#"><img src="{% static 'img/svg/instagram-icon.svg' %}"/></a>
+                <a href="#"><img src="{% static 'img/svg/facebook-icon.svg' %}"/></a>
+                <a href="#"><img src="{% static 'img/svg/whatsapp-icon.svg' %}"/></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-2.2.4.js' %}" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@11.1.14/swiper.min.js"></script>
     <script src="{% static 'js/libs.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
-
-
-
   </body>
 </html>
+
 

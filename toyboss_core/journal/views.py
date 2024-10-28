@@ -37,13 +37,19 @@ class ProductInnerView(TemplateView):
 
     def get_context_data(self, **kwargs):
         product_pk = kwargs['pk']
+        product = get_object_or_404(Product, id=product_pk)
+        recipes = Recipe.objects.filter(products=product)
+        related_products = (Product.objects
+                            .filter(category=product.category)
+                            .exclude(id=product_pk))
 
         context = {
-            'product': Product.objects.get(id=product_pk)
+            'product': product,
+            'recipes': recipes,
+            'related_products': related_products,
+            'social_media': Contact.objects.first()
         }
         return context
-
-
 
 class PublicationsView(TemplateView):
     template_name = 'publications.html'

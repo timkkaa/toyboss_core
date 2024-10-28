@@ -37,6 +37,7 @@ class Product(models.Model):
     image = models.ImageField(upload_to='products/', verbose_name='image')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="products", verbose_name='category')
     recipes = models.ManyToManyField(Recipe, related_name="products", verbose_name='recipe')
+    composition = models.CharField(max_length=250, verbose_name='состав', null=True)
 
     def __str__(self):
         return self.name

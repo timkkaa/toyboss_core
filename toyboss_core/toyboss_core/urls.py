@@ -13,13 +13,13 @@ from journal.views import HomeView, ProductView, ProductInnerView, PublicationsV
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', HomeView.as_view()),
+    path('home/', HomeView.as_view(), name='home-url'),
     path('product/', ProductView.as_view(), name='product-url'),
     path('product-inner/<int:pk>/', ProductInnerView.as_view(), name='product-inner-url'),
-    path('publications/', PublicationsView.as_view()),
-    path('publications-inner/', PublicationsInnerView.as_view()),
-    path('about/<int:pk>/', AboutCompanyView.as_view(), name='about'),
-    path('recipes/', ReciponsView.as_view()),
+    path('publications/', PublicationsView.as_view(), name='publication-url'),
+    path('publications-inner/<int:pk>/', PublicationsInnerView.as_view(), name='publication-inner-url'),
+    path('about/', AboutCompanyView.as_view(), name='about-url'),
+    path('recipes/', ReciponsView.as_view(), name='recipes-url'),
     path('recipes-inner/<int:pk>/', ReciponsInnerView.as_view(), name='recipes-inner-url'),
 
 ]

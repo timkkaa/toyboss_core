@@ -2,72 +2,83 @@
 {% load static %}
 
 {% block content %}
+
     <section class="product">
-        <div class="container">
-            <div class="product__content">
-                <div class="product-left">
-                    <h1>Продукция</h1>
-                </div>
-                <div class="product-right">
-                    <div class="crumb"><a href="#">Главная</a><a href="#">Продукция</a><span> Колбасы</span></div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="product__content">
+          <div class="product-left">
+            <h1>Продукция</h1>
+          </div>
+          <div class="product-right">
+            <div class="crumb"><a href="{% url 'home-url' %}">Главная</a><a href="{% url 'publication-url' %}">Продукция</a><span> Колбасы</span></div>
+          </div>
         </div>
+      </div>
     </section>
+    <section class="parallax" style="background: url('{% static 'img/jpg/slider-background.jpg' %}')">
+      <div class="paralax-img"><img src="{% static 'img/png/img9.png' %}"/></div>
+      <div class="paralax-img2"><img src="{% static 'img/png/img10.png' %}"/></div>
+      <div class="parallax-heading">
+        <h2>{{ category.name }}</h2>
+      </div>
+    </section>
+    <section class="product__inner">
+      <div class="container">
+        <div class="product-right">
+          <div class="product__inner-content">
+            <div class="product__inner-img"><img src="{% static 'img/png/img12.png' %}"/></div>
+            <div class="productinner-heading-all">
+              <div class="product__inner-heading">
+                <h2>{{ product.name }}</h2>
+                <p>{{ product.instructions }}</p>
+              </div>
+              <div class="product__inner-heading">
+                <h2>Состав</h2>
+                <p>{{ product.composition }}</p>
+              </div>
+              <div class="product__inner-heading">
+                <h2>Рецепты для {{ product.name }}</h2>
 
-    {% for item in products %}
-        <section class="parallax" style="background: url({% static 'img/jpg/slider-background.jpg' %})">
-            <div class="paralax-img"><img src="{% static 'img/png/img9.png' %}"/></div>
-            <div class="paralax-img2"><img src="{% static 'img/png/img10.png' %}"/></div>
-            <div class="parallax-heading">
-                <h2>{{ item.category }}</h2>
-            </div>
-        </section>
+                <div class="product__inner-card-all">
 
-        <section class="product__inner">
-            <div class="container">
-                <div class="product-right">
-                    <div class="product__inner-content">
-                        <div class="product__inner-img"><img src="{{ item.image.url }}"/></div>
-                        <div class="productinner-heading-all">
-                            <div class="product__inner-heading">
-                                <h2>{{ item.name }}</h2>
-                                <h3>{{ item.category }}</h3>
-                                <p></p>
-                            </div>
-                            <div class="product__inner-heading">
-                                <h2>Состав</h2>
-                                <p></p>
-                            </div>
-                            <div class="product__inner-heading">
-                                <h2>Рецепт</h2>
-                                <p></p>
-                            </div>
-                        </div>
-                        <a href="#"></a>
+                {% for recipe in recipes %}
+                  <div class="product__inner-cards">
+                    <div class="product__inner-card">
+                      <div class="product__inner-card-img"><img src="{{ recipe.image.url }}" data-mh="my-group2"/></div>
+                      <div class="product__inner-card-heading">
+                        <p>{{ recipe.name }}</p>
+                        <p>{{ recipe.instructions }}</p>
+                      </div>
+                      <a href="#"></a>
                     </div>
+                  </div>
+                {% empty %}
+                  <p>Нет доступных рецептов для этого продукта.</p>
+                {% endfor %}
                 </div>
+              </div>
             </div>
-        </section>
-    {% endfor %}
-
-    {% for item in products %}
-        <section class="about-product">
-            <div class="container">
-                <div class="product-sausage">
-                    <div class="product-right">
-                        <div class="product__card-all">
-                            <div class="product__card-inner">
-                                <div class="product__card">
-                                    <div class="product__card-img"><img src="{{ item.image.url }}"/></div>
-                                    <h4 data-mh="my-group">{{ item.name }}</h4><a href="{% url 'product-inner-url' pk=item.id %}"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-product">
+      <div class="container">
+        <div class="product-sausage">
+          <div class="product-right">
+            <div class="product__card-all">
+              {% for product in products %}
+              <div class="product__card-inner">
+                <div class="product__card">
+                  <div class="product__card-img"><img src="{{ product.image }}"/></div>
+                  <h4 data-mh="my-group">{{ product.name }}</h4><a href="#"></a>
                 </div>
+              </div>
+              {% endfor %}
             </div>
-        </section>
-    {% endfor %}
-
+          </div>
+        </div>
+      </div>
+    </section>
 {% endblock %}
+
