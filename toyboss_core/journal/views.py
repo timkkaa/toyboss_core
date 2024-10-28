@@ -12,8 +12,9 @@ from journal.models import Category, Publication, Recipe, Product, Contact, Abou
 class CategoryListView(TemplateView):
 
     def get_context_data(self, **kwargs):
+        category_pk = kwargs['pk']
         context = super().get_context_data(**kwargs)
-        context['categories'] = Category.objects.all()
+        context['category'] = Category.objects.get(id=category_pk)
         return context
 
 
@@ -26,7 +27,7 @@ class ProductView(TemplateView):
     def get_context_data(self, **kwargs):
 
         context = {
-            'product': Product.objects.all
+            'products': Product.objects.all()
         }
         return context
 
@@ -35,9 +36,10 @@ class ProductInnerView(TemplateView):
     template_name = 'product-inner.html'
 
     def get_context_data(self, **kwargs):
+        product_pk = kwargs['pk']
 
         context = {
-            'product': Product.objects.get(id=kwargs['pk'])
+            'product': Product.objects.get(id=product_pk)
         }
         return context
 

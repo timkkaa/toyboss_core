@@ -18,10 +18,9 @@ urlpatterns = [
     path('product-inner/<int:pk>/', ProductInnerView.as_view(), name='product-inner-url'),
     path('publications/', PublicationsView.as_view()),
     path('publications-inner/', PublicationsInnerView.as_view()),
-    path('about-company/', AboutCompanyView.as_view()),
+    path('about/<int:pk>/', AboutCompanyView.as_view(), name='about'),
     path('recipes/', ReciponsView.as_view()),
-    path('recipes-inner/', ReciponsInnerView.as_view()),
+    path('recipes-inner/<int:pk>/', ReciponsInnerView.as_view(), name='recipes-inner-url'),
 
 ]
-
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

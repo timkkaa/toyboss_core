@@ -18,246 +18,37 @@
       </div>
     </section>
     <div class="product__section-all">
+  {% for item in products %}
       <section class="product__section-group">
         <div class="parallax" style="background: url({% static 'img/jpg/slider-background.jpg' %})">
           <div class="paralax-img"><img src="{% static 'img/png/img9.png' %}"/></div>
           <div class="paralax-img2"><img src="{% static 'img/png/img10.png' %}"/></div>
           <div class="parallax-heading">
-            <h2>полукапченые колбасы</h2>
+            <h2>{{ item.category }}</h2>
           </div>
+
         </div>
-        <div class="product-sausage">
-          <div class="container">
-            <div class="product-right-all">
-              <div class="product-right">
-                <div class="product__card-all">
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img9.png' %}"/></div>
-                      <h4 data-mh="my-group"> Фирменная</h4><a href="#"></a>
+          <div class="product-sausage">
+            <div class="container">
+              <div class="product-right-all">
+                <div class="product-right">
+                  <div class="product__card-all">
+
+                    <div class="product__card-inner">
+                      <div class="product__card">
+                        <div class="product__card-img"><img src="{{ item.image.url }}"/></div>
+                        <h4 data-mh="my-group"> {{ item.name }} </h4><a href="{% url 'product-inner-url' pk=item.id %}"></a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская Мусульманская Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Фирменная</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская Мусульманская Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская</h4><a href="#"></a>
-                    </div>
+
                   </div>
                 </div>
-                <div class="button__product-all"><a href="#">Смотреть все</a></div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="product__section-group">
-        <div class="parallax" style="background: url({% static 'img/jpg/slider-background.jpg' %})">
-          <div class="paralax-img"><img src="{% static 'img/png/img9.png' %}"/></div>
-          <div class="paralax-img2"><img src="{% static 'img/png/img10.png' %}"/></div>
-          <div class="parallax-heading">
-            <h2>вареные колбасы</h2>
-          </div>
-        </div>
-        <div class="product-sausage">
-          <div class="container">
-            <div class="product-right-all">
-              <div class="product-right">
-                <div class="product__card-all">
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Фирменная</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img9.png' %}"/></div>
-                      <h4 data-mh="my-group"> Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская Мусульманская Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Фирменная</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская Мусульманская Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="button__product-all"><a href="#">Смотреть все</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="product__section-group">
-        <div class="parallax" style="background: url({% static 'img/jpg/slider-background.jpg' %})">
-          <div class="paralax-img"><img src="{% static 'img/png/img9.png' %}"/></div>
-          <div class="paralax-img2"><img src="{% static 'img/png/img10.png' %}"/></div>
-          <div class="parallax-heading">
-            <h2>сэндвичи</h2>
-          </div>
-        </div>
-        <div class="product-sausage">
-          <div class="container">
-            <div class="product-right-all">
-              <div class="product-right">
-                <div class="product__card-all">
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Фирменная</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская Мусульманская Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Фирменная</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img12.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская Мусульманская Мусульманская Мусульманская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__card-inner">
-                    <div class="product__card">
-                      <div class="product__card-img"><img src="{% static 'img/png/img9.png' %}"/></div>
-                      <h4 data-mh="my-group"> Байская</h4><a href="#"></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="button__product-all"><a href="#">Смотреть все</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    </section>
+  {% endfor %}
+
   </body>
 {% endblock %}
